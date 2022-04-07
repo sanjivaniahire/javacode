@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class xyz{
+
+public static void main(String [] args)
+{
+ int i,n,sign=-1;
+ float sum=0;
+ System.out.println("Enter the value of n ");
+ Scanner input = new Scanner (System.in);
+ int number = input.nextInt();
+
+ for(i=1;i<=number;i++)
+ {
+  sign *= -1;
+  sum += sign*1.0/i;
+ }
+ System.out.println("log 2 : "+sum);
+}
+}
