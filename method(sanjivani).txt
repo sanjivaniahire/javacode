@@ -1,0 +1,27 @@
+
+
+    public class Area {
+        void findarea(int a, int b)
+        {
+            System.out.println( "\n Area of rectangle with breadth "+a+" and lenght " +b+ " is :" + a*b);
+        }
+
+        void findarea(int a)
+        {
+            System.out.println( "\n Area of circle with  radius " +a+ " is :" + 3.14 * a);
+        }
+
+        void findarea(int a, int b, int c)
+        {
+            double temp = (a + b + c);
+            double s= temp/2;
+            double triarea = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            System.out.println( "\n Area of triangle with lenght of sides  "+a+"," +b+ " and " +c+" is : "+ triarea);
+        }
+        public static void main(String[] args) {
+            Area a = new Area();
+            a.findarea(2);
+        }
+    }
+
+
