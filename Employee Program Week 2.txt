@@ -1,0 +1,13 @@
+public class EmployeesSalary
+{
+   public static void main (String args[])
+   {
+       int emp1=11000;
+       int emp2=5000;
+       int emp3 ;
+       
+       emp3=(10000*3)-(emp1+emp2);
+       
+       System.out.println(" Salary of employee 3 is :"+emp3);
+   }
+}
