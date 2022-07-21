@@ -1,0 +1,35 @@
+create database student;
+
+
+create table employee(
+'emp_id' INT NOT NULL,
+'name' VARCHAR(45) NOT NULL,
+'dept' VARCHAR(45), NULL
+'salary' INT, NULL
+);
+
+
+
+use student;
+
+
+insert into employee values (101, 'Sanjivani', 'It', 30000);
+insert into employee values (102, 'Sanjana', 'HR', 40000);
+insert into employee values (103, 'Samar', 'Finace', 50000);
+insert into employee values (104, 'Sameer', 'Marketing', 30000);
+SELECT * FROM student.employee;
+
+SELECT name,salary FROM student.employee;
+UPDATE 'student'. 'employee' SET 'dept' = 'Finance' WHERE 'emp_id' = '102';
+UPDATE 'student'. 'employee' SET 'dept' = 'Finance' WHERE 'emp_id' = '104';
+SELECT * FROM student.employee;
+
+
+
+delete from 'student' . 'employee' WHERE emp_id ='104';
+SELECT * FROM student.employee;
+
+
+
+
+
