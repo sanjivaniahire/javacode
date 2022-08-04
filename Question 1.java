@@ -1,0 +1,1 @@
+SELECT EmpName, Salary From Employee WHERE Salary >= 5000 AND Salary <= 10000
